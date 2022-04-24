@@ -15,6 +15,11 @@ class QuoteController extends Controller
 
     public function single($quote){
         $key = base64_decode($quote);
-        return (new QuoteService())->getQuote($key);
+        $quote = (new QuoteService())->getQuote($key);
+        
+        return view('home', [
+            'quote' => $quote['text'],
+            'key' => base64_encode($quote['key'])
+        ]);
     }
 }
