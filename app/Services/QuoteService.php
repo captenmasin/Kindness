@@ -13,7 +13,8 @@ class QuoteService
         $this->quotes = json_decode(file_get_contents(resource_path('json/compliments.json')));
     }
 
-    public function getQuote($id)
+    #[ArrayShape(['text' => "mixed", 'key' => "string"])]
+    public function getQuote($id): array
     {
         $id = (int) $id;
 

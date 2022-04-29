@@ -13,7 +13,7 @@ class HomeController extends Controller
         $quote = (new QuoteService())->getRandomQuote();
         return view('home', [
             'quote' => $quote['text'],
-            'key' => base64_encode($quote['key'])
+            'key' => $quote['key']
         ]);
     }
 }
