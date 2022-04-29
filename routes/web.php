@@ -17,4 +17,3 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', HomeController::class);
 Route::get('{quote}', [QuoteController::class, 'single']);
-Route::get('test', [QuoteController::class, 'generate']);

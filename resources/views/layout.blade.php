@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>A little kindness for you</title>
+
+    <script defer data-domain="alittlekindnessfor.me" src="https://plausible.io/js/plausible.js"></script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
 		tailwind.config = {
